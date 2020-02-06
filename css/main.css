@@ -1,0 +1,60 @@
+@charset "UTF-8"
+
+body {
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #333;
+	background-color: #fff;
+	border-top: 10px solid #333;
+}
+
+p {
+	line-height: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover a:active{
+	color: #ccc;
+}
+/* Classes */
+.hidden {
+	display: none;
+}
+
+#header {
+ width: 1121px;
+ height: 108px;
+}
+
+#header h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 300px
+	font-weight: 600;
+	letter-spacing: 10px;
+}
+
+#maincont {
+ margin: 0 auto;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+
+#dragZone {
+ width: 533px;
+ height: 483px;
+}
+
+#dropZone {
+ width: 533px;
+ height: 483px;
+}
+
+#footer {
+ width: 1121px;
+ height: 98px;
+}
