@@ -28,6 +28,8 @@ a:hover a:active{
 #header {
  width: 1121px;
  height: 108px;
+ background-color: black;
+ margin: 50px;
 }
 
 #header h1 {
@@ -45,16 +47,28 @@ a:hover a:active{
 }
 
 #dragZone {
- width: 533px;
- height: 483px;
+ width: 500px;
+ height: 485px;
+ background-color: grey;
+
+}
+.drag-zone {
+	width: 120px;
+	height: 120px;
+	border: thin dashed white;
+	display: inline-grid;
+	position: relative;
 }
 
 #dropZone {
  width: 533px;
  height: 483px;
+ background-color: grey;
 }
 
 #footer {
  width: 1121px;
  height: 98px;
+ background-color: black;
+ margin: 50px;
 }
