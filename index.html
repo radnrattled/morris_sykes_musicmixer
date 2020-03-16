@@ -5,14 +5,19 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap');
+</style>
 	</head>
 <body>
+<main class="mainCont">
 <header id="header">
 <h1>Wubtrola Music Mixer</h1>	
 </header> <!-- End header -->
 <section id="maincont">
 	<div id="dropZone"><h3 class="hidden">The Drop Zones</h3>
 		<div class="drop-zone"></div>
+		<img src="images/Wubtrola.svg" alt="Victrola Img">
 	</div>
 	<div id="dragZone"><h3 class="hidden">The Drag Zone</h3>
 <div class="drag-zone"></div>
@@ -34,7 +39,15 @@
 	</div>
 </section>
 <footer id="footer">
+	<h2>Instructions</h2>
+	<ol>
+		<li>Drag a record onto the record player</li>
+		<li>Mix different records to create a song!</li>
+		<li>Hit "Reset" to start over</li>
+	</ol>
+	<button>Reset</button>
 	</footer>
 <script src="js/main.js"></script>	
 </body>
+</main>
 </html>
