@@ -51,7 +51,7 @@ a:hover a:active{
 }
 
 #dragZone {
- width: 500px;
+ width: 450px;
  height: 485px;
  padding-top: 60px;
 
@@ -65,10 +65,22 @@ a:hover a:active{
 }
 
 #dropZone {
- width: 533px;
+ width: 200px;
  height: 483px;
+ margin-top: 70px; 
+ margin-left: 100px;
 
 }
+
+.drop-zone {
+	width: 120px;
+	height: 120px;
+	border: thin dashed white;
+	display: flex;
+	flex-direction: column;
+}
+
+
 
 #footer {
  width: 1121px;
