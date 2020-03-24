@@ -4,7 +4,7 @@ const dropZones = document.querySelectorAll('.drop-zone');
 		recordImg = document.querySelectorAll('.record');
 
 
-unction dragstart(event) {
+function dragstart(event) {
 	console.log('started a drag');
 	// capture the id of the eelement we are dragging
 	//the dataTransfer object is to temp store data you can retrive and use later(like an audio track)
