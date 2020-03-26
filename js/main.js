@@ -3,7 +3,7 @@
 const dropZones = document.querySelectorAll('.drop-zone');
 		recordImg = document.querySelectorAll('.record');
 
-
+const images = ["top", "middle", "bottom"]; 
 function dragstart(event) {
 	console.log('started a drag');
 	// capture the id of the eelement we are dragging
@@ -19,9 +19,9 @@ function allowDragOver(event) {
 function allowDrop(event) {
 	console.log('you dropped me!');
 
-	let currentPiece = event.dataTransfer.getData("text/plain");
+	let currentImage = event.dataTransfer.getData("text/plain");
 
-	event.target.appendChild(document.querySelector(`#${currentPiece}`));
+	event.target.appendChild(document.querySelector(`#${currentImage}`));
 }
 
 recordImg.forEach(piece => piece.addEventListener('dragstart', dragstart))
