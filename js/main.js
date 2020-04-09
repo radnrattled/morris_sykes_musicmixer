@@ -3,6 +3,7 @@
 const dropZones = document.querySelectorAll('.drop-zone');
 		recordImg = document.querySelectorAll('.record');
 		reset = document.querySelector('button')
+		mixerAudio = document.querySelector('audio');
 
 function dragstart(event) {
 	console.log('started a drag');
@@ -24,6 +25,12 @@ function allowDrop(event) {
 	let currentImage = event.dataTransfer.getData("text/plain");
 
 	event.target.appendChild(document.querySelector(`#${currentImage}`));
+	//let targetName = this.className.split(" ")[1]; //this wil strip out the house name 
+  //let targetSource = targetName.slice(1);
+  let newAudioSource = `audio/bass.wav`
+	mixerAudio.src = newAudioSource;
+	mixerAudio.load();
+	mixerAudio.play();
 }
 
 function resetPieces() {
@@ -34,6 +41,8 @@ function resetPieces() {
 			document.querySelector("#dragZone").appendChild(zone.firstElementChild);
 		}
 	})
+	mixerAudio.currentTime = 0;
+	mixerAudio.pause();
 }
 recordImg.forEach(piece => piece.addEventListener('dragstart', dragstart))
 dropZones.forEach(zone => zone.addEventListener('dragover', allowDragOver));
