@@ -25,9 +25,9 @@ function allowDrop(event) {
 	let currentImage = event.dataTransfer.getData("text/plain");
 
 	event.target.appendChild(document.querySelector(`#${currentImage}`));
-	//let targetName = this.className.split(" ")[1]; //this wil strip out the house name 
-  //let targetSource = targetName.slice(1);
-  let newAudioSource = `audio/bass.wav`
+	let targetName = this.className.split(" ")[1]; 
+  	let targetSource = targetName.slice(1);
+  	let newAudioSource = `audio/${targetSource}.wav`
 	mixerAudio.src = newAudioSource;
 	mixerAudio.load();
 	mixerAudio.play();
