@@ -22,11 +22,11 @@ function allowDrop(event) {
 
 	if (this.children.length > 0) { return false; }
 
-	let currentImage = event.dataTransfer.getData("text/plain");
+	let currentImage = document.querySelector(`#${event.dataTransfer.getData("text/plain")}`);
 
-	event.target.appendChild(document.querySelector(`#${currentImage}`));
-	let targetName = this.className.split(" ")[1]; 
-  	let targetSource = targetName.slice(1);
+	event.target.appendChild(currentImage);
+
+	let targetSource = currentImage.className.split(" ")[1]; 
   	let newAudioSource = `audio/${targetSource}.wav`
 	mixerAudio.src = newAudioSource;
 	mixerAudio.load();
